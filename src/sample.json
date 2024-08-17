@@ -1,0 +1,442 @@
+[
+    {
+        "productName": "Wireless Earbuds",
+        "productImage": "https://i.ibb.co/NTQTSt1/pro-1.jpg",
+        "description": "Noise-cancelling wireless earbuds with long battery life.",
+        "price": 49.99,
+        "category": "Electronics",
+        "ratings": 4.5,
+        "productCreationDateTime": "2024-08-15T10:15:30",
+        "brandName": "SoundWave"
+    },
+    {
+        "productName": "Smartphone Case",
+        "productImage": "https://i.ibb.co/HPYkZY8/pro-2.jpg",
+        "description": "Durable smartphone case with shock resistance.",
+        "price": 12.99,
+        "category": "Accessories",
+        "ratings": 4.3,
+        "productCreationDateTime": "2024-08-15T09:45:00",
+        "brandName": "CaseCraft"
+    },
+    {
+        "productName": "Gaming Mouse",
+        "productImage": "https://i.ibb.co/HTZqZGp/pro-3.jpg",
+        "description": "RGB gaming mouse with customizable DPI settings.",
+        "price": 34.95,
+        "category": "Gaming",
+        "ratings": 4.7,
+        "productCreationDateTime": "2024-08-15T08:30:10",
+        "brandName": "GamerPro"
+    },
+    {
+        "productName": "Yoga Mat",
+        "productImage": "https://i.ibb.co/sQM2NJW/pro-4.jpg",
+        "description": "Eco-friendly yoga mat with non-slip surface.",
+        "price": 25.00,
+        "category": "Fitness",
+        "ratings": 4.6,
+        "productCreationDateTime": "2024-08-14T19:22:40",
+        "brandName": "EcoFlex"
+    },
+    {
+        "productName": "Wireless Charger",
+        "productImage": "https://i.ibb.co/ySvRCDw/pro-5.jpg",
+        "description": "Fast wireless charger compatible with multiple devices.",
+        "price": 18.99,
+        "category": "Electronics",
+        "ratings": 4.4,
+        "productCreationDateTime": "2024-08-14T18:10:15",
+        "brandName": "PowerX"
+    },
+    {
+        "productName": "Bluetooth Speaker",
+        "productImage": "https://i.ibb.co/JRRLSYB/pro-6.jpg",
+        "description": "Portable Bluetooth speaker with excellent sound quality.",
+        "price": 29.99,
+        "category": "Audio",
+        "ratings": 4.8,
+        "productCreationDateTime": "2024-08-14T16:05:55",
+        "brandName": "SoundBlast"
+    },
+    {
+        "productName": "Stainless Steel Water Bottle",
+        "productImage": "https://i.ibb.co/L5t3FBj/pro-7.jpg",
+        "description": "Insulated water bottle that keeps drinks cold for 24 hours.",
+        "price": 15.99,
+        "category": "Home",
+        "ratings": 4.9,
+        "productCreationDateTime": "2024-08-14T15:50:20",
+        "brandName": "HydroSafe"
+    },
+    {
+        "productName": "Fitness Tracker",
+        "productImage": "https://i.ibb.co/WV8hgwp/pro-8.jpg",
+        "description": "Advanced fitness tracker with heart rate monitoring.",
+        "price": 59.95,
+        "category": "Fitness",
+        "ratings": 4.5,
+        "productCreationDateTime": "2024-08-14T14:30:00",
+        "brandName": "FitPulse"
+    },
+    {
+        "productName": "Laptop Backpack",
+        "productImage": "https://i.ibb.co/2ywPSZm/pro-9.jpg",
+        "description": "Water-resistant backpack with padded laptop compartment.",
+        "price": 45.00,
+        "category": "Accessories",
+        "ratings": 4.6,
+        "productCreationDateTime": "2024-08-13T13:15:50",
+        "brandName": "CarryAll"
+    },
+    {
+        "productName": "Noise-Cancelling Headphones",
+        "productImage": "https://i.ibb.co/F7HMw4G/pro-10.jpg",
+        "description": "High-quality noise-cancelling headphones with 20-hour battery life.",
+        "price": 89.99,
+        "category": "Audio",
+        "ratings": 4.7,
+        "productCreationDateTime": "2024-08-13T12:05:30",
+        "brandName": "QuietTech"
+    },
+    {
+        "productName": "4K Ultra HD Smart TV",
+        "productImage": "https://i.ibb.co/L1dLFWK/pro-11.jpg",
+        "description": "55-inch 4K Smart TV with built-in streaming apps.",
+        "price": 399.99,
+        "category": "Electronics",
+        "ratings": 4.8,
+        "productCreationDateTime": "2024-08-12T11:00:15",
+        "brandName": "ViewMax"
+    },
+    {
+        "productName": "Electric Kettle",
+        "productImage": "https://i.ibb.co/4K2037v/pro-12.jpg",
+        "description": "Fast-boiling electric kettle with auto shut-off feature.",
+        "price": 22.50,
+        "category": "Home",
+        "ratings": 4.4,
+        "productCreationDateTime": "2024-08-12T10:45:10",
+        "brandName": "BoilMaster"
+    },
+    {
+        "productName": "Running Shoes",
+        "productImage": "https://i.ibb.co/YDP9WRM/pro-13.jpg",
+        "description": "Comfortable and lightweight running shoes with great traction.",
+        "price": 69.95,
+        "category": "Fashion",
+        "ratings": 4.6,
+        "productCreationDateTime": "2024-08-12T09:35:45",
+        "brandName": "RunPro"
+    },
+    {
+        "productName": "Mechanical Keyboard",
+        "productImage": "https://i.ibb.co/hcQ0Fqs/pro-14.jpg",
+        "description": "RGB mechanical keyboard with customizable keys.",
+        "price": 75.00,
+        "category": "Gaming",
+        "ratings": 4.9,
+        "productCreationDateTime": "2024-08-11T08:20:50",
+        "brandName": "KeyLight"
+    },
+    {
+        "productName": "Smart Thermostat",
+        "productImage": "https://i.ibb.co/TkYp7LM/pro-15.jpg",
+        "description": "Smart thermostat with app control and energy-saving features.",
+        "price": 129.99,
+        "category": "Home",
+        "ratings": 4.7,
+        "productCreationDateTime": "2024-08-11T07:10:30",
+        "brandName": "ThermoSync"
+    },
+    {
+        "productName": "Organic Cotton T-Shirt",
+        "productImage": "https://i.ibb.co/LJ53PKF/pro-16.jpg",
+        "description": "Soft organic cotton T-shirt available in various colors.",
+        "price": 19.99,
+        "category": "Fashion",
+        "ratings": 4.5,
+        "productCreationDateTime": "2024-08-11T06:50:15",
+        "brandName": "EcoWear"
+    },
+    {
+        "productName": "Desk Lamp",
+        "productImage": "https://i.ibb.co/T4ds0P2/pro-17.jpg",
+        "description": "LED desk lamp with adjustable brightness and touch controls.",
+        "price": 27.99,
+        "category": "Home",
+        "ratings": 4.6,
+        "productCreationDateTime": "2024-08-10T05:30:25",
+        "brandName": "BrightLite"
+    },
+    {
+        "productName": "Portable Power Bank",
+        "productImage": "https://i.ibb.co/f22zkVZ/pro-18.jpg",
+        "description": "High-capacity portable power bank with fast charging.",
+        "price": 39.95,
+        "category": "Accessories",
+        "ratings": 4.7,
+        "productCreationDateTime": "2024-08-10T04:10:45",
+        "brandName": "ChargeGo"
+    },
+    {
+        "productName": "Electric Standing Desk",
+        "productImage": "https://i.ibb.co/LJs0NdZ/pro-19.jpg",
+        "description": "Height-adjustable electric standing desk with memory settings.",
+        "price": 299.99,
+        "category": "Office",
+        "ratings": 4.8,
+        "productCreationDateTime": "2024-08-09T03:05:50",
+        "brandName": "StandSmart"
+    },
+    {
+        "productName": "Cordless Vacuum Cleaner",
+        "productImage": "https://i.ibb.co/mzz0GBL/pro-20.jpg",
+        "description": "Lightweight cordless vacuum cleaner with powerful suction.",
+        "price": 139.99,
+        "category": "Home",
+        "ratings": 4.7,
+        "productCreationDateTime": "2024-08-09T02:45:35",
+        "brandName": "CleanEase"
+    },
+    {
+        "productName": "Smartwatch",
+        "productImage": "https://i.ibb.co/p40kpfs/pro-21.jpg",
+        "description": "Stylish smartwatch with fitness tracking and notifications.",
+        "price": 199.99,
+        "category": "Electronics",
+        "ratings": 4.8,
+        "productCreationDateTime": "2024-08-09T01:35:20",
+        "brandName": "TimeTec"
+    },
+    {
+        "productName": "Smart Light Bulb",
+        "productImage": "https://i.ibb.co/D9MDjPj/pro-22.jpg",
+        "description": "Wi-Fi enabled smart light bulb with voice control compatibility.",
+        "price": 24.99,
+        "category": "Home",
+        "ratings": 4.5,
+        "productCreationDateTime": "2024-08-15T11:45:30",
+        "brandName": "BrightLite"
+    },
+    {
+        "productName": "Wireless Keyboard and Mouse Combo",
+        "productImage": "https://i.ibb.co/N9DfWxz/pro-23.jpg",
+        "description": "Ergonomic wireless keyboard and mouse combo for productivity.",
+        "price": 55.00,
+        "category": "Office",
+        "ratings": 4.6,
+        "productCreationDateTime": "2024-08-15T10:30:10",
+        "brandName": "KeyLight"
+    },
+    {
+        "productName": "Waterproof Bluetooth Speaker",
+        "productImage": "https://i.ibb.co/0FkR0x5/pro-24.jpg",
+        "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
+        "price": 39.99,
+        "category": "Audio",
+        "ratings": 4.7,
+        "productCreationDateTime": "2024-08-14T19:10:25",
+        "brandName": "SoundBlast"
+    },
+    {
+        "productName": "Insulated Lunch Box",
+        "productImage": "https://i.ibb.co/D96cmBN/pro-25.jpg",
+        "description": "Durable insulated lunch box that keeps food fresh for hours.",
+        "price": 20.00,
+        "category": "Home",
+        "ratings": 4.4,
+        "productCreationDateTime": "2024-08-14T17:50:50",
+        "brandName": "EcoFlex"
+    },
+    {
+        "productName": "Smart Fitness Band",
+        "productImage": "https://i.ibb.co/CQrww0N/pro-26.jpg",
+        "description": "Smart fitness band with activity tracking and sleep monitoring.",
+        "price": 42.99,
+        "category": "Fitness",
+        "ratings": 4.6,
+        "productCreationDateTime": "2024-08-14T15:30:10",
+        "brandName": "FitPulse"
+    },
+    {
+        "productName": "Stainless Steel Travel Mug",
+        "productImage": "https://i.ibb.co/NT0JnHn/pro-27.jpg",
+        "description": "Leak-proof stainless steel travel mug with insulation.",
+        "price": 18.95,
+        "category": "Home",
+        "ratings": 4.8,
+        "productCreationDateTime": "2024-08-13T14:50:20",
+        "brandName": "HydroSafe"
+    },
+    {
+        "productName": "Cordless Electric Screwdriver",
+        "productImage": "https://i.ibb.co/0r307VP/pro-28.jpg",
+        "description": "Compact cordless electric screwdriver with LED light.",
+        "price": 29.99,
+        "category": "Tools",
+        "ratings": 4.5,
+        "productCreationDateTime": "2024-08-13T13:25:35",
+        "brandName": "PowerX"
+    },
+    {
+        "productName": "Wireless Earphones",
+        "productImage": "https://i.ibb.co/0rVKs3n/pro-29.jpg",
+        "description": "High-quality wireless earphones with excellent sound clarity.",
+        "price": 59.99,
+        "category": "Audio",
+        "ratings": 4.7,
+        "productCreationDateTime": "2024-08-13T12:15:45",
+        "brandName": "SoundWave"
+    },
+    {
+        "productName": "Portable Charger",
+        "productImage": "https://i.ibb.co/vjmrHjM/pro-30.jpg",
+        "description": "Compact portable charger with fast charging capabilities.",
+        "price": 33.95,
+        "category": "Accessories",
+        "ratings": 4.6,
+        "productCreationDateTime": "2024-08-12T10:40:30",
+        "brandName": "ChargeGo"
+    },
+    {
+        "productName": "Electric Standing Desk Converter",
+        "productImage": "https://i.ibb.co/nM3Hx2r/pro-31.jpg",
+        "description": "Electric desk converter that transforms any desk into a standing desk.",
+        "price": 189.99,
+        "category": "Office",
+        "ratings": 4.8,
+        "productCreationDateTime": "2024-08-12T09:50:20",
+        "brandName": "StandSmart"
+    },
+    {
+        "productName": "Bluetooth Fitness Scale",
+        "productImage": "https://i.ibb.co/bvSPHBx/pro-32.jpg",
+        "description": "Bluetooth-enabled fitness scale that tracks body composition.",
+        "price": 49.99,
+        "category": "Fitness",
+        "ratings": 4.7,
+        "productCreationDateTime": "2024-08-11T08:20:10",
+        "brandName": "FitPulse"
+    },
+    {
+        "productName": "Ergonomic Office Chair",
+        "productImage": "https://i.ibb.co/440XgBG/pro-33.jpg",
+        "description": "Ergonomic office chair with lumbar support and adjustable armrests.",
+        "price": 150.00,
+        "category": "Office",
+        "ratings": 4.5,
+        "productCreationDateTime": "2024-08-11T07:45:40",
+        "brandName": "CarryAll"
+    },
+    {
+        "productName": "Wireless Charging Pad",
+        "productImage": "https://i.ibb.co/CsjpN1j/pro-34.jpg",
+        "description": "Slim wireless charging pad for Qi-compatible devices.",
+        "price": 21.99,
+        "category": "Electronics",
+        "ratings": 4.4,
+        "productCreationDateTime": "2024-08-10T06:30:50",
+        "brandName": "PowerX"
+    },
+    {
+        "productName": "Digital Alarm Clock",
+        "productImage": "https://i.ibb.co/qmYhNZh/pro-35.jpg",
+        "description": "Modern digital alarm clock with LED display and USB charging.",
+        "price": 19.95,
+        "category": "Home",
+        "ratings": 4.6,
+        "productCreationDateTime": "2024-08-10T05:45:20",
+        "brandName": "BoilMaster"
+    },
+    {
+        "productName": "Foldable Yoga Block",
+        "productImage": "https://i.ibb.co/tQPvLVC/pro-36.jpg",
+        "description": "Lightweight foldable yoga block made from eco-friendly materials.",
+        "price": 12.99,
+        "category": "Fitness",
+        "ratings": 4.7,
+        "productCreationDateTime": "2024-08-09T04:10:35",
+        "brandName": "EcoFlex"
+    },
+    {
+        "productName": "Noise-Cancelling Earbuds",
+        "productImage": "https://i.ibb.co/GCPTFhp/pro-37.jpg",
+        "description": "Compact noise-cancelling earbuds with superior sound quality.",
+        "price": 69.99,
+        "category": "Audio",
+        "ratings": 4.8,
+        "productCreationDateTime": "2024-08-09T02:25:10",
+        "brandName": "SoundBlast"
+    },
+    {
+        "productName": "Smart Plug",
+        "productImage": "https://i.ibb.co/mF4YHqr/pro-38.webp",
+        "description": "Smart plug that works with voice assistants and schedules.",
+        "price": 14.99,
+        "category": "Electronics",
+        "ratings": 4.6,
+        "productCreationDateTime": "2024-08-09T01:40:45",
+        "brandName": "ThermoSync"
+    },
+    {
+        "productName": "Wireless Doorbell Camera",
+        "productImage": "https://i.ibb.co/PtKpT2L/pro-38.jpg",
+        "description": "Smart wireless doorbell camera with night vision and two-way audio.",
+        "price": 99.95,
+        "category": "Home",
+        "ratings": 4.8,
+        "productCreationDateTime": "2024-08-08T23:30:00",
+        "brandName": "ViewMax"
+    },
+    {
+        "productName": "Eco-Friendly Tote Bag",
+        "productImage": "https://i.ibb.co/3h7K2bT/pro-39.jpg",
+        "description": "Stylish and eco-friendly tote bag made from recycled materials.",
+        "price": 14.95,
+        "category": "Fashion",
+        "ratings": 4.4,
+        "productCreationDateTime": "2024-08-08T22:50:25",
+        "brandName": "EcoWear"
+    },
+    {
+        "productName": "Portable Air Compressor",
+        "productImage": "https://i.ibb.co/Cb7MwVh/pro-40.jpg",
+        "description": "Portable air compressor for inflating tires and sports equipment.",
+        "price": 54.99,
+        "category": "Tools",
+        "ratings": 4.6,
+        "productCreationDateTime": "2024-08-08T21:30:40",
+        "brandName": "PowerX"
+    },
+    {
+        "productName": "3-in-1 Charging Cable",
+        "productImage": "https://i.ibb.co/3dM6T5K/pro-41.webp",
+        "description": "Versatile 3-in-1 charging cable compatible with various devices.",
+        "price": 12.99,
+        "category": "Accessories",
+        "ratings": 4.5,
+        "productCreationDateTime": "2024-08-08T20:50:15",
+        "brandName": "ChargeGo"
+    },
+    {
+        "productName": "Home Security Camera",
+        "productImage": "https://i.ibb.co/zSDcT2f/pro-42.jpg",
+        "description": "Home security camera with motion detection and cloud storage.",
+        "price": 79.99,
+        "category": "Home",
+        "ratings": 4.7,
+        "productCreationDateTime": "2024-08-08T19:10:05",
+        "brandName": "SecureGuard"
+    },
+    {
+        "productName": "Stainless Steel Cutlery Set",
+        "productImage": "https://i.ibb.co/Wcr4BSD/pro-43.jpg",
+        "description": "Stylish stainless steel cutlery set with modern design.",
+        "price": 45.00,
+        "category": "Home",
+        "ratings": 4.8,
+        "productCreationDateTime": "2024-08-08T18:30:20",
+        "brandName": "FineDine"
+    }
+]

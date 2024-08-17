@@ -33,10 +33,10 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-    },
-    env : {
-      browser: true,
-      node: true
+      env : {
+        browser: true,
+        node: true
+      },
     },
   },
 ]
