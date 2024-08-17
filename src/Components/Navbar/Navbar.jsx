@@ -14,7 +14,7 @@ const Navbar = () => {
     <li><NavLink className={({ isActive }) => isActive ? "text-sky-500 font-semibold border-b-4 rounded-none pb-1 pl-0 pr-0 border-sky-500" : "hover:text-sky-500 font-semibold"} to='/'>Home</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-200">
             <div className='w-5/6 mx-auto'>
                 <div className="navbar-start">
                     <div className="dropdown">
