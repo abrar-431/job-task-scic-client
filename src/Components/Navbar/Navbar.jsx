@@ -4,7 +4,12 @@ import { NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const Navbar = () => {
-    const { user } = useAuth();
+    const { user, logOut } = useAuth();
+    const handleLogOut = () =>{
+        logOut()
+        .then()
+        .catch()
+    }
     const navLinks = <>
     <li><NavLink className={({ isActive }) => isActive ? "text-sky-500 font-semibold border-b-4 rounded-none pb-1 pl-0 pr-0 border-sky-500" : "hover:text-sky-500 font-semibold"} to='/'>Home</NavLink></li>
     </>
@@ -27,23 +32,12 @@ const Navbar = () => {
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        {
-                        user ?
-                            <div className='md:flex hidden gap-2 items-center'>
-                                <button onClick={handleLogOut} className='btn btn-info btn-outline'>Logout</button>
-                                <div className="tooltip tooltip-bottom" data-tip={user.displayName}>
-                                    <img className='w-10 h-10 rounded-full' src={user.photoURL} alt={user.displayName} />
-                                </div>
-                            </div>
-                            :
-                            <NavLink className={({ isActive }) => isActive ? "text-sky-500 font-semibold border-b-4 rounded-none pb-1 pl-0 pr-0 border-sky-500" : "hover:text-sky-500 font-semibold"} to='/login'>Login</NavLink>
-                    }
                     </div>
                     <a className="btn btn-ghost text-xl">
                         <img src={logo} className='w-2/12' alt="MegaBuyz" />
                     </a>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center mr-2 hidden lg:flex">
                     {navLinks}
                 </div>
                 <div className="navbar-end">
