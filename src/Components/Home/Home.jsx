@@ -14,14 +14,15 @@ const Home = () => {
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(1000);
     const [search, setSearch] = useState('');
+    const [sort, setSort] = useState('');
     const [categoryName, setCategoryName] = useState('');
     const totalPages = Math.ceil(totalItems / totalItemsPerPage);
     const pages = [];
     useEffect(() => {
-        fetch(`http://localhost:5000/products?page=${currentPage}&items=${totalItemsPerPage}&brand=${brand}&categoryName=${categoryName}&minPrice=${minPrice}&maxPrice=${maxPrice}&search=${search}`)
+        fetch(`http://localhost:5000/products?page=${currentPage}&items=${totalItemsPerPage}&brand=${brand}&categoryName=${categoryName}&minPrice=${minPrice}&maxPrice=${maxPrice}&search=${search}&sort=${sort}`)
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, [currentPage, totalItemsPerPage, brand, categoryName, minPrice, maxPrice, search])
+    }, [currentPage, totalItemsPerPage, brand, categoryName, minPrice, maxPrice, search, sort])
     const handlePrevButton = () => {
         if (currentPage > 1) {
             setCurrentPage(currentPage - 1)
@@ -90,6 +91,10 @@ const Home = () => {
         setMinPrice(0);
         setMaxPrice(1000);
     }
+    const handleSort = e =>{
+        setSort(e.target.value)
+    }
+    console.log(sort)
     return (
         <div>
             <div className='flex flex-col md:flex-row justify-center gap-2 mt-10'>
@@ -128,9 +133,14 @@ const Home = () => {
                         name='product'
                         className="input input-bordered input-info max-w-xs" />
                     <button className='btn btn-info text-gray-200 ml-2' type="submit">Search</button>
-                    
                 </form>
                 <button onClick={handleReset} className='btn btn-warning'>Reset</button>
+                <select onChange={handleSort} defaultValue='' className="select select-info w-full max-w-xs mb-4 ">
+                    <option disabled value=''>Sort Products</option>
+                    <option value='asc'>Low to High</option>
+                    <option value='desc'>High to Low</option>
+                    <option value='date'>Newest First</option>
+                </select>
             </div>
             <Products products={products}></Products>
             <div className='flex justify-center'>

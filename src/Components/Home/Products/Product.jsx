@@ -1,13 +1,19 @@
 import React from 'react';
-import { FaMoneyCheckDollar } from 'react-icons/fa6';
+import { FaCalendar, FaMoneyCheckDollar } from 'react-icons/fa6';
 import { MdCategory, MdRateReview } from 'react-icons/md';
 import { SiBrandfolder } from 'react-icons/si';
 
 const Product = ({ product }) => {
-    const { productName, productImage, description, price, category, ratings, brandName } = product;
+    const { productName, productImage, description, price, category, ratings, brandName,
+        productCreationDateTime
+    } = product;
     return (
         <div className="p-6 bg-gray-100 transform transition-transform hover:scale-105">
             <div className='flex-grow'>
+                <div className='flex items-center my-2'>
+                    <FaCalendar className='text-lg mr-2'></FaCalendar>
+                    <p>Added On: {productCreationDateTime}</p>
+                </div>
                 <img className='rounded-lg mx-auto' src={productImage} alt={productName} />
                 <h2 className="text-2xl font-bold my-3">{productName}</h2>
                 <p>About {productName}: {description}</p>
@@ -23,7 +29,7 @@ const Product = ({ product }) => {
                 </div>
                 <div className='my-4 flex justify-between'>
                     <div className='flex items-center'>
-                        <MdRateReview  className='text-lg mr-2'></MdRateReview >
+                        <MdRateReview className='text-lg mr-2'></MdRateReview >
                         <p>{ratings}</p>
                     </div>
                     <div className='flex items-center'>
