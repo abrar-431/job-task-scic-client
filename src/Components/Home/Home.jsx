@@ -4,17 +4,19 @@ import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
     const totalProducts = useLoaderData()
+    const distinctBrands = [...new Set(totalProducts.map(product => product.brandName))];
     const [products, setProducts] = useState([]);
     const totalItems = totalProducts.length;
     const [totalItemsPerPage, setTotalItemsPerPage] = useState(5);
     const [currentPage, setCurrentPage] = useState(1);
+    const [brand, setBrand] = useState('');
     const totalPages = Math.ceil(totalItems / totalItemsPerPage);
     const pages = [];
     useEffect(() => {
-        fetch(`http://localhost:5000/products?page=${currentPage}&items=${totalItemsPerPage}`)
+        fetch(`http://localhost:5000/products?page=${currentPage}&items=${totalItemsPerPage}&brand=${brand}`)
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, [currentPage, totalItemsPerPage])
+    }, [currentPage, totalItemsPerPage, brand])
     const handlePrevButton = () => {
         if (currentPage > 1) {
             setCurrentPage(currentPage - 1)
@@ -33,12 +35,23 @@ const Home = () => {
     for (let i = 1; i <= totalPages; i++) {
         pages.push(i);
     }
+    const handleBrandName = e =>{
+        setBrand(e.target.value);
+    }
+    console.log(brand)
     return (
         <div>
+            {/* Category According to Brand Name */}
+            <select onChange={handleBrandName} defaultValue='' className="select select-info w-full max-w-xs">
+                <option disabled value=''>Select Brand Name</option>
+                {
+                    distinctBrands.map((brand, idx)=><option key={idx} value={brand}>{brand}</option>)
+                }
+            </select>
             <Products products={products}></Products>
             <div className='flex justify-center'>
-                <select onChange={handleItemsPerPage} className="select select-ghost w-full max-w-xs mb-4 bg-gray-300">
-                    <option disabled selected>Number of Items Per Page</option>
+                <select onChange={handleItemsPerPage} defaultValue='' className="select select-ghost w-full max-w-xs mb-4 bg-gray-300">
+                    <option disabled value=''>Number of Items Per Page</option>
                     <option value='5'>5</option>
                     <option value='10'>10</option>
                     <option value='20'>20</option>
