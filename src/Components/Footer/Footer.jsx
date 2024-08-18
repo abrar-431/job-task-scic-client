@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className=" bg-base-200 text-black items-center p-4">
             <div className='footer w-5/6 mx-auto'>
                 <aside className="grid-flow-col items-center">
-                    <img className='w-1/6' src={logo} alt="Mega Buyz" />
+                    <img className='w-1/2 md:w-1/4' src={logo} alt="Mega Buyz" />
                     <p>Copyright © {new Date().getFullYear()} - All right reserved by Mega Buyz</p>
                 </aside>
                 <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

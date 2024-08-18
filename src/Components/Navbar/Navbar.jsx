@@ -5,13 +5,13 @@ import useAuth from '../../Hooks/useAuth';
 
 const Navbar = () => {
     const { user, logOut } = useAuth();
-    const handleLogOut = () =>{
+    const handleLogOut = () => {
         logOut()
-        .then()
-        .catch()
+            .then()
+            .catch()
     }
     const navLinks = <>
-    <li><NavLink className={({ isActive }) => isActive ? "text-sky-500 font-semibold border-b-4 rounded-none pb-1 pl-0 pr-0 border-sky-500" : "hover:text-sky-500 font-semibold"} to='/'>Home</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? "text-sky-500 font-semibold border-b-4 pb-1 border-sky-500" : "hover:text-sky-500 font-semibold"} to='/'>Home</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-200">
@@ -31,11 +31,14 @@ const Navbar = () => {
                                     strokeWidth="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
+                            <ul
+                                tabIndex={0}
+                                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                {navLinks}
+                            </ul>
                         </div>
                     </div>
-                    <a className="btn btn-ghost text-xl">
-                        <img src={logo} className='w-2/12' alt="MegaBuyz" />
-                    </a>
+                    <img src={logo} className='w-2/12' alt="MegaBuyz" />
                 </div>
                 <div className="navbar-center mr-2 hidden lg:flex">
                     {navLinks}
@@ -50,7 +53,7 @@ const Navbar = () => {
                                 </div>
                             </div>
                             :
-                            <NavLink className={({ isActive }) => isActive ? "text-sky-500 font-semibold border-b-4 rounded-none pb-1 pl-0 pr-0 border-sky-500" : "hover:text-sky-500 font-semibold"} to='/login'>Login</NavLink>
+                            <NavLink className={({ isActive }) => isActive ? "text-sky-500 font-semibold border-b-4 pb-1 border-sky-500" : "hover:text-sky-500 font-semibold"} to='/login'>Login</NavLink>
                     }
                 </div>
             </div>
