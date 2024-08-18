@@ -4,7 +4,7 @@ import Product from './Product';
 const Products = ({products}) => {
     // const [products, setProducts] = useState([]);
     // useEffect(()=>{
-    //     fetch('http://localhost:5000/products')
+    //     fetch('https://scic-job-task-server-lovat.vercel.app/products')
     //     .then(res=>res.json())
     //     .then(data=>setProducts(data))
     // },[])

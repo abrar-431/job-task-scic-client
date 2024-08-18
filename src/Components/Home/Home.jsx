@@ -7,7 +7,7 @@ const Home = () => {
     const distinctBrands = [...new Set(totalProducts.map(product => product.brandName))];
     const distinctCategories = [...new Set(totalProducts.map(product => product.category))];
     const [products, setProducts] = useState([]);
-    const totalItems = totalProducts.length;
+    const [totalItems, setTotalItems] = useState(totalProducts.length);
     const [totalItemsPerPage, setTotalItemsPerPage] = useState(5);
     const [currentPage, setCurrentPage] = useState(1);
     const [brand, setBrand] = useState('');
@@ -16,13 +16,20 @@ const Home = () => {
     const [search, setSearch] = useState('');
     const [sort, setSort] = useState('');
     const [categoryName, setCategoryName] = useState('');
-    const totalPages = Math.ceil(totalItems / totalItemsPerPage);
-    const pages = [];
     useEffect(() => {
-        fetch(`http://localhost:5000/products?page=${currentPage}&items=${totalItemsPerPage}&brand=${brand}&categoryName=${categoryName}&minPrice=${minPrice}&maxPrice=${maxPrice}&search=${search}&sort=${sort}`)
+        fetch(`https://scic-job-task-server-lovat.vercel.app/products?page=${currentPage}&items=${totalItemsPerPage}&brand=${brand}&categoryName=${categoryName}&minPrice=${minPrice}&maxPrice=${maxPrice}&search=${search}&sort=${sort}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [currentPage, totalItemsPerPage, brand, categoryName, minPrice, maxPrice, search, sort])
+
+    useEffect(() => {
+        fetch(`https://scic-job-task-server-lovat.vercel.app/products-count?brand=${brand}&categoryName=${categoryName}&minPrice=${minPrice}&maxPrice=${maxPrice}&search=${search}`)
+            .then(res => res.json())
+            .then(data => setTotalItems(data.result))
+    }, [brand, categoryName, minPrice, maxPrice, search])
+    console.log(totalItems)
+    const totalPages = Math.ceil(totalItems / totalItemsPerPage);
+    const pages = [];
     const handlePrevButton = () => {
         if (currentPage > 1) {
             setCurrentPage(currentPage - 1)
@@ -43,9 +50,11 @@ const Home = () => {
     }
     const handleBrandName = e => {
         setBrand(e.target.value);
+        setCurrentPage(1);
     }
     const handleCategoryName = e => {
         setCategoryName(e.target.value);
+        setCurrentPage(1);
     }
     const handlePriceRange = e => {
         const opt = e.target.value;
@@ -78,11 +87,13 @@ const Home = () => {
                 setMinPrice(0);
                 setMaxPrice(1000);
         }
+        setCurrentPage(1);
     }
     const handleSearch = e =>{
         e.preventDefault();
         setSearch(e.target.product.value);
         e.target.reset();
+        setCurrentPage(1);
     }
     const handleReset = ()=>{
         setBrand('');
@@ -90,11 +101,12 @@ const Home = () => {
         setSearch('');
         setMinPrice(0);
         setMaxPrice(1000);
+        setCurrentPage(1);
     }
     const handleSort = e =>{
         setSort(e.target.value)
+        setCurrentPage(1);
     }
-    console.log(sort)
     return (
         <div>
             <div className='flex flex-col md:flex-row justify-center gap-2 mt-10'>
